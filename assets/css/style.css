@@ -1,13 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
 }
-
- body {
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: repeat(10, 25%);
-} 
 
 /* Css Header */
 .links {
@@ -15,34 +9,21 @@
 }
 
 .logo-site {
-    width: 60%;
-    grid-column: 1;
-}
-
-.img-destination {
-    grid-column:2;
-}
-
-.img-avis {
-    grid-column:3;
-}
-
-.img-devis {
-    grid-column:4;
+    width:100%;
 }
 
 .mobile {
-    grid-column:3;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     list-style: none;
 }
 
-.logo {
-    width: 10%;
+li {
+    width:25%;
 }
+
+
 
 
 
@@ -72,7 +53,7 @@
 } */
 
 /* fin css footer */
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 767px) {
     .links {
         font-size: 25px;
         display: flex;
