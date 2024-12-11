@@ -1,6 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ body {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(10, 25%);
+} 
+
 /* Css Header */
+.links {
+    display: none;
+}
+
+.logo-site {
+    width: 60%;
+    grid-column: 1;
+}
+
+.img-destination {
+    grid-column:2;
+}
+
+.img-avis {
+    grid-column:3;
+}
+
+.img-devis {
+    grid-column:4;
+}
+
+.mobile {
+    grid-column:3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.logo {
+    width: 10%;
+}
+
+
+
 /* fin css header */
 /* css main */
 /* fin css main */
 /* css footer */
+
+/* .horaire {
+    grid-column:1/4 ;
+    grid-row:7 ;
+}
+
+.info {
+    grid-column: 1;
+    grid-row:8;
+}
+
+.media {
+    grid-column: 4;
+    grid-row: 9;
+}
+
+.ml {
+    grid-column: 1/4;
+    grid-row:10;
+} */
+
 /* fin css footer */
+@media screen and (min-width: 1025px) {
+    .links {
+        font-size: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .logo {
+        width: 10%;
+    }
+}
