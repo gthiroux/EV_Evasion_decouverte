@@ -3,20 +3,51 @@
     padding:0;
 }
 
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+body {
+    background-color: #709791;
+}
+
 /* Css Header */
+
 .links {
     display: none;
 }
 
 .logo-site {
-    width:100%;
+    width:100%; 
+}
+
+.img-destination {
+    width:25%;
+}
+
+.img-avis {
+    width:25%;
+}
+
+.img-devis {
+    width:25%;
+}
+
+.mobile li:nth-of-type(1){
+    margin-right: 10% ;
 }
 
 .mobile {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    list-style: none;
+    list-style: none;   
 }
 
 li {
@@ -31,36 +62,48 @@ li {
 /* css main */
 /* fin css main */
 /* css footer */
+footer {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+.logo {
+    width:25px;
+}
 
-/* .horaire {
-    grid-column:1/4 ;
-    grid-row:7 ;
+.horaire {
+    font-size:15px;
+    font-family: "Poppins-Bold";
 }
 
 .info {
-    grid-column: 1;
-    grid-row:8;
-}
-
-.media {
-    grid-column: 4;
-    grid-row: 9;
+    font-size:15px;
+    font-family: "Poppins-Regular";
+    margin:5%;
 }
 
 .ml {
-    grid-column: 1/4;
-    grid-row:10;
-} */
+    font-size:15px;
+    font-family: "Poppins-Regular";
+}
 
 /* fin css footer */
 @media screen and (min-width: 767px) {
+
+    header {
+        font-family: "Poppins-Regular";
+    }
+
     .links {
         font-size: 25px;
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
         align-items: center;
         list-style: none;
+    }
+
+    li {
+        width:25%;
     }
 
     .mobile {
@@ -71,7 +114,7 @@ li {
         text-decoration: none;
     }
 
-    .logo {
-        width: 10%;
+    .logo-site2 {
+        width: 100%;
     }
 }

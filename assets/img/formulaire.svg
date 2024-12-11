@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.13 66.7">
+  <g id="picto">
+    <path d="M52.13,66.7H0V0h43.18l8.95,10.05v56.65ZM1,65.7h50.13V10.43l-.58-.65-7.81-8.78H1v64.7Z"/>
+    <path d="M52.03,9.95h-10.64V0h1.79l8.85,9.95ZM42.39,8.95h7.42l-7.07-7.95h-.35v7.95Z"/>
+    <rect x="6.46" y="13.44" width="38.52" height="2.62" rx=".57" ry=".57"/>
+    <rect x="6.81" y="23.04" width="38.52" height="2.62" rx=".57" ry=".57"/>
+    <rect x="6.46" y="23.04" width="38.52" height="2.62" rx=".57" ry=".57"/>
+    <rect x="6.46" y="32.64" width="38.52" height="2.62" rx=".57" ry=".57"/>
+    <rect x="6.46" y="41.53" width="38.52" height="2.62" rx=".57" ry=".57"/>
+    <rect x="5.77" y="51.05" width="38.52" height="2.62" rx=".57" ry=".57"/>
+    <polygon points="51.26 10.57 50.55 9.78 42.59 .83 43.33 .17 52 9.91 51.26 10.57"/>
+  </g>
+</svg>
