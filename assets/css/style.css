@@ -1,3 +1,4 @@
+/* début css mobile */
 * {
     margin:0;
     padding:0;
@@ -18,6 +19,9 @@ body {
 }
 
 /* Css Header */
+nav {
+    background-color: #0C5555;
+}
 
 .links {
     display: none;
@@ -47,16 +51,12 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    list-style: none;   
+    list-style: none;
 }
 
 li {
     width:25%;
 }
-
-
-
-
 
 /* fin css header */
 /* css main */
@@ -67,14 +67,22 @@ footer {
     justify-content:center;
     align-items: center;
     flex-direction: column;
+    background-color: #0C5555;
+    color: white;
 }
 .logo {
-    width:25px;
+    width:45px;
+    border-radius: 50%;
 }
 
 .horaire {
     font-size:15px;
     font-family: "Poppins-Bold";
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    width: 100%;
 }
 
 .info {
@@ -83,12 +91,31 @@ footer {
     margin:5%;
 }
 
+.info a {
+    color: white;
+    text-decoration: none;
+}
+
 .ml {
-    font-size:15px;
-    font-family: "Poppins-Regular";
+    font-size:9px;
+    font-family: "Poppins-Bold";
+}
+
+.ml a {
+    text-decoration: none;
+    color: #F8F4E9;
+}
+
+div.media {
+    width: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 /* fin css footer */
+/* fin css mobile */
+/* début css ordi */
 @media screen and (min-width: 767px) {
 
     header {
@@ -102,6 +129,9 @@ footer {
         list-style: none;
     }
 
+    .links a {
+        color: #F8F4E9;
+    }
     li {
         width:25%;
     }
@@ -114,7 +144,34 @@ footer {
         text-decoration: none;
     }
 
+    .horaire {
+        font-size: 30px;
+        font-family: "Poppins-Bold";
+    }
+
+    .info {
+        font-size: 20px;
+        font-family: "Poppins-Regular";
+    }
+
     .logo-site2 {
         width: 100%;
     }
+
+    .logo {
+        width: 65px;
+    }
+    
+    div.media {
+        width: 50vh;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .ml {
+        font-size: 15px;
+    }
 }
+
+/* Fin css ordi */
