@@ -3,17 +3,6 @@
     margin:0;
     padding:0;
 }
-
-@font-face {
-    font-family: "Poppins-Regular";
-    src: url(../fonts/Poppins-Regular.ttf);
-}
-
-@font-face {
-    font-family: "Poppins-Bold";
-    src: url(../fonts/Poppins-Bold.ttf);
-}
-
 body {
     background-color: #709791;
 }
@@ -90,6 +79,7 @@ li {
 
 /* fin css header */
 /* css main */
+/* CSS Galerie */
 .div_galerie {
   display: flex;
   position: relative;
@@ -105,7 +95,6 @@ li {
 
 .div_galerie:hover .texte_galerie {
   opacity: 1;
-  z-index: 1;
 }
 
 .div_galerie > img {
@@ -125,7 +114,7 @@ h2 {
 main > section > h2 + div {
   display: grid;
   grid-template-columns: 50vw 50vw;
-  grid-template-rows: repeat(4, 20vh);
+  grid-template-rows: repeat(4, 30vh);
 }
 
 #one {
@@ -161,174 +150,12 @@ main > section > h2 + div {
 #seven {
   display: none;
 }
-
+/* Galerie ordi */
 @media screen and (min-width: 767px) {
   .div_galerie > img {
     border-radius: 3%;
-  }
-  .container {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .card {
-    background-color: #f8f4e9;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .card:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    border: 2px solid #462c09;
-  }
-
-  .card img {
-    width: 100%;
-    height: 200px;
-    border-radius: 5px;
-    margin-bottom: 15px;
-  }
-
-  .card h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #333;
-  }
-
-  .card p {
-    font-size: 1em;
-    color: #555;
-  }
-
-  .destination {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #f8f4e9;
-  }
-
-  /* styles.css */
-
-  /* Section Style */
-  .temoignages {
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .temoignagescard {
-    background-color: #fefef6;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-    height: 400px;
-  }
-
-  .temoignagescard:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-  }
-
-  .temoignagescard > img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-  }
-
-  .name {
-    font-size: 1em;
-    font-weight: normal;
-    color: #555;
-  }
-
-  .star {
-    width: 50%;
-    height: 50%;
-  }
-
-  .description {
-    font-size: 1em;
-    color: #555;
-    margin-bottom: 10px;
-    text-align: center;
-    line-height: 1.5;
-  }
-
-  .date {
-    font-size: 0.9em;
-    color: #aaa;
-    text-align: right;
-    margin-top: 10px;
-    align-self: flex-end;
-  }
-
-  .etoile {
-    width: 100%;
-    height: 10%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .destination {
-    color: #333;
-  }
-
-  @media (min-width: 767px) {
-    .temoignagescard {
-      width: 93vw;
-      flex-direction: row;
-      height: 300 px;
-    }
- 
- 
-    .info {
-      display: flex;
-      flex-direction: column;
-      margin-left: 5%;
-    }
- 
-    .star {
-      width: 5%;
-      height: 5%;
-    }
- 
-    .etoile {
-      justify-content: start;
-    }
- 
-    .destination {
-      justify-content: start;
-      margin: 0;
-      font-size: larger;
-    }
- 
-    .temoignagescard>img {
-      width: 200px;
-      height: 175px;
-    }
- 
-    .description {
-      text-align: start;
-      padding-top: 5%;
- 
-    }
-  }
-
-  main > section > h2 + div {
+    
+  }main > section > h2 + div {
     display: grid;
     grid-template-columns: 14fr 1fr 8fr 8fr;
     grid-template-rows: 25vh 25vh 50vh;
@@ -372,7 +199,171 @@ main > section > h2 + div {
     grid-row: 3/4;
   }
 }
+  /* CSS destination phare mobile */
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 
+  .card {
+    background-color: #f8f4e9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  
+
+  .card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+
+  .card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .card p {
+    font-size: 1em;
+    color: #555;
+  }
+
+  .destination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f8f4e9;
+  }
+/* destination phare ordi */
+@media screen and (min-width:767px) {
+    .card:hover {
+        transform: translateY(-10px) scale(1.05);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        border: 2px solid #462c09;
+      }    
+}
+  /* témoignage mobile*/
+.temoignages {
+margin: auto;
+padding: 20px;
+text-align: center;
+}
+
+.temoignagescard {
+background-color: #fefef6;
+border-radius: 10px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+padding: 20px;
+margin-bottom: 20px;
+text-align: left;
+display: flex;
+flex-direction: column;
+align-items: center;
+transition: transform 0.3s, box-shadow 0.3s;
+height: 400px;
+}
+
+.temoignagescard:hover {
+transform: translateY(-5px);
+box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.temoignagescard>img {
+width: 80px;
+height: 80px;
+border-radius: 50%;
+}
+
+.name {
+font-size: 1em;
+font-weight: normal;
+color:#0c5655;
+}
+
+
+.star {
+width: 50%;
+height: 50%;
+}
+
+.description {
+font-size: 1em;
+color: #555;
+margin-bottom: 10px;
+text-align: center;
+line-height: 1.5;
+}
+
+
+.date {
+font-size: 0.9em;
+color: #aaa;
+text-align: right;
+margin-top: 10px;
+align-self: flex-end;
+}
+
+.etoile {
+width: 100%;
+height: 10%;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+.destination {
+color: #333;
+}
+/* témoignage ordi */
+  @media (min-width: 767px) {
+    .temoignagescard {
+      width: 93vw;
+      flex-direction: row;
+      height: 300 px;
+    }
+ 
+ 
+    .info {
+      display: flex;
+      flex-direction: column;
+      margin-left: 5%;
+    }
+ 
+    .star {
+      width: 5%;
+      height: 5%;
+    }
+ 
+    .etoile {
+      justify-content: start;
+    }
+ 
+    .destination {
+      justify-content: start;
+      margin: 0;
+      font-size: larger;
+    }
+ 
+    .temoignagescard>img {
+      width: 200px;
+      height: 175px;
+    }
+ 
+    .description {
+      text-align: start;
+      padding-top: 5%;
+ 
+    }
+  }
 /* CSS formulaire */
 /* Met les élements du formulaire en colonne */
 form {
@@ -446,13 +437,13 @@ footer {
     width: 100%;
 }
 
-.info {
+.information {
     font-size:15px;
     font-family: "Poppins-Regular";
     margin:5%;
 }
 
-.info a {
+.information a {
     color: white;
     text-decoration: none;
 }
