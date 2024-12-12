@@ -1,3 +1,33 @@
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url(../fonts/OpenSans-Regular.ttf);
+  font-family: "Open Sans Italic";
+  src: url(../fonts/OpenSans-Italic.ttf);
+  font-family: "Poppins-Regular";
+  src: url(../fonts/Poppins-Regular.ttf);
+  font-family: "Poppins-Bold";
+  src: url(../fonts/Poppins-Bold.ttf);
+}
+/* mobile first */
+p {
+  font-family: "Open Sans Regular";
+  color: #f7f4e9;
+}
+h1 {
+  font-family: "Poppins-Bold";
+  color: #f7f4e9;
+}
+h2 {
+  font-family: "Poppins-Regular";
+  color: #f7f4e9;
+}
+h3 {
+  font-family: "Poppins-Regular";
+  color: #f7f4e9;
+}
+img {
+  width: 10vw;
+}
 /* Css Header */
 /* fin css header */
 /* css main */
