@@ -2,11 +2,29 @@
     font-family:"Open Sans Regular";
     src: url(../fonts/OpenSans-Regular.ttf);
     font-family:"Open Sans Italic";
-    src:url(../fonts/OpenSans-Italic.ttf)
+    src:url(../fonts/OpenSans-Italic.ttf);
+    font-family:"Poppins-Regular";
+    src: url(../fonts/Poppins-Regular.ttf);
+    font-family:"Poppins-Bold";
+    src:url(../fonts/Poppins-Bold.ttf)
+    
 }
+/* mobile first */
 /* Css Header */
 /* fin css header */
 /* css main */
+p{
+    font-family:"Open Sans Regular"
+}
+h1{
+    font-family:"Poppins-Bold"
+}
+h2{
+    font-family:"Poppins-Regular"
+}
+h3{
+    font-family:"Poppins-Regular"
+}
 main>section>h2+div{
     display: grid;
     height: 100vh;
@@ -65,7 +83,12 @@ main>section>h2+div{
 .div_galerie:hover .texte_galerie{
     opacity: 1;
 }
+/* CSS avis clients */
+#avis div{
+
+}
 /* CSS formulaire */
+/* Met les élements du formulaire en colonne */
 form{
     display: flex;
     flex-direction: column;
@@ -85,13 +108,29 @@ input,select{
     border:#0C5655 solid 2px;
     border-radius: 10px;
 }
-
 button{
     background-color: #0C5655;
     color:#F7F4E9;
     text-transform: uppercase;
+    border-radius: 20px;;
     font-family: "Open Sans Regular";
     margin-top: 5%;
+    padding:3%;
+}
+/* début CSS format ordi */
+@media screen and (min-width:767px) {
+    form{
+        width: 75%;
+        margin:10%;
+        padding:10px;
+    }
+    button{
+        width:25%;
+        margin-left: 40%;
+        padding:5%;
+        font-size:larger;
+    }
+    
 }
 /* fin css main */
 /* css footer */
