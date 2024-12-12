@@ -22,9 +22,44 @@ h2{
 h3{
     font-family:"Poppins-Regular"
 }
+img{
+    width: 10vw;
+}
 /* Css Header */
 /* fin css header */
 /* css main */
+.div_galerie {
+    display: flex;
+    position: relative;
+}
+ 
+.texte_galerie {
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    width: 100%;
+    text-align: center;
+}
+ 
+.div_galerie:hover .texte_galerie {
+    opacity: 1;
+    z-index: 1;
+}
+ 
+.div_galerie>img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+ 
+section{
+    display:flex;
+    flex-direction: column;
+}
+ 
+h2{
+    align-self: center;
+}
 main>section>h2+div{
     display: grid;
     grid-template-columns: 50vw 50vw;
@@ -111,26 +146,12 @@ main>section>h2+div{
     }
 
 #seven{
+    display:block;
     grid-column: 2/5;
     grid-row: 3/4;
 }
-
-.div_galerie{
-    position: relative;
 }
 
-.texte_galerie{
-    position: absolute;
-    color: #f00;
-    bottom: 0;
-    opacity: 0;
-    width: 100%;
-    text-align: center;
-}
-
-.div_galerie:hover .texte_galerie{
-    opacity: 1;
-}}
 /* CSS formulaire */
 /* Met les élements du formulaire en colonne */
 form{
