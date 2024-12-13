@@ -12,19 +12,57 @@
         <nav>
             <ul class="mobile">
                 <li><img class="logo-site" src="assets/img/Logo.svg" alt="logo du site"></li>
-                <li><img class="img-destination" src="assets/img/destination.svg" alt="Image Destination Phare"></li>
-                <li><img class="img-avis" src="assets/img/temoignage.svg" alt="Image Avis Client"></li>
-                <li><img class="img-devis" src="assets/img/formulaire.svg" alt="Image Devis"></li>
+                <li><a href="#destination"><img class="img-destination" src="assets/img/destination.svg" alt="Image Destination Phare"></a></li>
+                <li><a href="#temoignage"><img class="img-avis" src="assets/img/temoignage.svg" alt="Image Avis Client"></a></li>
+                <li><a href="#formulaire"><img class="img-devis" src="assets/img/formulaire.svg" alt="Image Devis"></a></li>
             </ul>
             <ul class="links">
                 <li><img class="logo-site2" src="assets/img/Logo.svg" alt=""></li>
-                <li><a href="">DESTINATIONS</a></li>
-                <li><a href="">TÉMOIGNAGES</a></li>
-                <li><a href="">DEVIS</a></li>
+                <li><a href="#destination">DESTINATIONS</a></li>
+                <li><a href="#temoignage">TÉMOIGNAGES</a></li>
+                <li><a href="#formulaire">DEVIS</a></li>
             </ul>
         </nav>
     </header>
     <main>
+      <section id="accueil">
+        <h1>Bienvenue sur Évasions & Découvertes</h1>
+        <img src="assets/img/voyage.jpg" alt="voyage photo">
+
+      </section>
+     
+      <section id="destination">
+        <h2>Nos Destination Phares</h2>
+        <div class="container">
+          <div class="card">
+            <h3>New York</h3>
+            <img src="assets/img/new_york.jpg" alt="best_destination_new-york" />
+            <p>
+              "Vibrez au cœur de l'effervescence de New York : une ville qui ne
+              dort jamais, entre gratte-ciels emblématiques, culture captivante et
+              expériences inoubliables !"
+            </p>
+          </div>
+          <div class="card">
+            <h3>Tokyo</h3>
+            <img src="assets/img/japon.jpg" alt="best_destination_tokyo" />
+            <p>
+              "Plongez dans l’effervescence de Tokyo, où traditions ancestrales et
+              innovations futuristes se rencontrent pour une expérience
+              inoubliable !"
+            </p>
+          </div>
+          <div class="card">
+            <h3>Le Caire</h3>
+            <img src="assets/img/le_caire.jpg" alt="best_destination_le-caire" />
+            <p>
+              "Partez pour Le Caire, la ville des pharaons et des merveilles, où
+              histoire millénaire et ambiance vibrante se rencontrent au bord du
+              Nil !"
+            </p>
+          </div>
+        </div>
+      </section>
       <section>
         <h2>Galerie</h2>
         <div>
@@ -58,45 +96,13 @@
           </div>
         </div>
       </section>
-      <section>
-        <h2>Nos Destination Phares</h2>
-        <div class="container">
-          <div class="card">
-            <h3>New York</h3>
-            <img src="assets/img/new_york.jpg" alt="best_destination_new-york" />
-            <p>
-              "Vibrez au cœur de l'effervescence de New York : une ville qui ne
-              dort jamais, entre gratte-ciels emblématiques, culture captivante et
-              expériences inoubliables !"
-            </p>
-          </div>
-          <div class="card">
-            <h3>Tokyo</h3>
-            <img src="assets/img/japon.jpg" alt="best_destination_tokyo" />
-            <p>
-              "Plongez dans l’effervescence de Tokyo, où traditions ancestrales et
-              innovations futuristes se rencontrent pour une expérience
-              inoubliable !"
-            </p>
-          </div>
-          <div class="card">
-            <h3>Le Caire</h3>
-            <img src="assets/img/le_caire.jpg" alt="best_destination_le-caire" />
-            <p>
-              "Partez pour Le Caire, la ville des pharaons et des merveilles, où
-              histoire millénaire et ambiance vibrante se rencontrent au bord du
-              Nil !"
-            </p>
-          </div>
-        </div>
-      </section>
-      <section  class="temoignages" >
+      <section id="temoignage" class="temoignages" >
         <h2>Avis Client</h2>
         <div class="temoignagescard">
-          <img src="assets/img/avatar1.jpg" alt="photo profil avatar 1" />
+          <img src="assets/img/avatar1.jpeg" alt="photo profil avatar 1" />
           <div class="info">
           <p class="destination">Sydney, Australie</p>
-          <p class="name">Gilles Martin</p>
+          <p class="name">Anne-Mary Claire</p>
           <div class="etoile">
           <img
             class="star"
@@ -136,7 +142,7 @@
           <img src="assets/img/avatar2.jpg" alt="photo profil avatar 2" />
           <div class="info">
           <p class="destination">Tokyo, Japon</p>
-          <p class="name">Anne-Mary Claire</p>
+          <p class="name">Gilles Martin</p>
           <div class="etoile">
           <img
             class="star"
@@ -172,7 +178,7 @@
         </div>
         </div>
         <div class="temoignagescard">
-          <img src="assets/img/avatar3.jpg" alt="photo profil avatar 3" />
+          <img src="assets/img/avatar3.png" alt="photo profil avatar 3" />
           <div class="info">
           <p class="destination">Las Vegas, USA</p>
           <p class="name">Joanne Gram</p>
@@ -258,13 +264,16 @@
     </main>
     <footer>
         <div class="horaire">
-            <p>Ouvert du :</p> <p>Lundi au Vendredi de 8h à 18h</p><p> le Samedi : 8h/13h</p>
+            <p>Ouvert du :</p> 
+            <p>Lundi au Vendredi de 8h à 18h</p>
+            <p> le Samedi : 8h/13h</p>
         </div>
         <div class="information">
             <p>Adresse : 31 Rue Irene Joliot Curie, 60610 La Croix-Saint-Ouen <br><br>
             Mail : <a href="mailto:evasion.decouvertes@gmail.com">evasion.decouvertes@gmail.com</a> <br><br> Téléphone : <a
                 href="telto:+33612345678">06 12 34 56 78</a></p>
         </div>
+        <p>Suivez-nous sur : </p>
         <div class="media">
             <p><a href=""><img class="logo" src="assets/img/Instagram_icon.png.webp" alt="Logo Instagram"></a></p>
             <p><a href=""><img class="logo" src="assets/img/tiktok-social-media-logo-icon-free-png.webp"
@@ -274,7 +283,7 @@
             <p><a href=""><img class="logo" src="assets/img/Facebook_logo_(square).png" alt="Logo Facebook"></a></p>
         </div>
         <div class="ml">
-            <p><a href="#">Site créé par Garance THIROUX, Matéo RIBEIRO, Zakaria COMMARTEAU et Raphaël ALIZIER</a>
+            <p>Site créé par Garance THIROUX, Matéo RIBEIRO, Zakaria COMMARTEAU et Raphaël ALIZIER</p>
         </div>
         
     </footer>
